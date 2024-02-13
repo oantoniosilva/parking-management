@@ -31,12 +31,12 @@ public class User implements Serializable {
     ROLE_CUSTOMER
   }
 
-  @Column(name = "created_at")
   @CreationTimestamp
+  @Column(name = "created_at")
   private Instant createdAt;
 
-  @Column(name = "updated_at")
   @UpdateTimestamp
+  @Column(name = "updated_at")
   private Instant updatedAt;
 
   @Column(name = "created_by")
